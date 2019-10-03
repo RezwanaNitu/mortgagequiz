@@ -1,0 +1,21 @@
+.vh-center {
+    margin: 30px auto;
+    padding: 5px;
+}
+.iframe-section {
+    background-color: lightblue;
+    padding: 45px;
+}
+.iframe-section > iframe {
+    width: 675px;
+}
+.divider {
+    display: block;
+    width: 75%;
+    border-bottom: black dashed 1px;
+    margin: 45px 0 auto;
+}
+.text-blue {
+    color:rgb(0, 104, 160);
+    padding-bottom: 5px;
+}
