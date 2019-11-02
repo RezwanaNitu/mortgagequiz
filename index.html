@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Custom CSS -->
@@ -12,75 +13,95 @@
 </head>
 <body>
 
-  <header class="vh-center">
-    <div class="container">
-      <div class="row">
-          <div class="col col-md-2 text-center">
-            <p><img src="https://placeimg.com/120/80/people/grayscale" alt="image"></p>
-          </div>
-          <div class="col-md-9">
-            <h2 class="text-center">
-              See Which Mortgage Programs You Qualify For
-            </h2>
-            <h6 class="text-center">Take Our 30 Second Quiz ⬇️</h6>
-          </div>
-          <div class="col col-md-1 text-right">
-            <p><img src="https://placeimg.com/120/80/tech" alt="image"></p>
+    <!-- Header -->
+    <div class="header flex-container">
+        <div class="flex-item text-right left">
+            <img src="https://placeimg.com/120/80/people/grayscale" alt="image">
+        </div>
+        <div class="flex-item">
+            <h1 class="text-center headline">See Which Mortgage Programs You Qualify For</h1>
+            <h2 class="text-center sub-headline">Take Our 30 Second Quiz ⬇</h2>
+        </div>
+        <div class="flex-item">
+            <img src="https://placeimg.com/120/80/tech" alt="image">
         </div>
     </div>
-  </header>
 
-  <section class="vh-center iframe-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <iframe src="https://quizzforms.com/app/view.php?id=21987" frameborder="0" style="width: 415px;
+
+    <!-- Section - Iframe -->
+    <section class="iframe-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <iframe src="https://www.google.com/" frameborder="0" style="width: 415px;
           height: 475px;"></iframe>
+            </div>
         </div>
-      </div>
-  </section>
-  <section class="vh-center">
-      <div class="container">
-        <div class="row justify-content-center">
-            <img alt="image" src="images/family2.jpg" class="fr-fic fr-dii" style="width: 720px;">
+    </section>
+
+
+    <!-- Section - Content -->
+    <section class="section-content">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <img alt="image" src="images/family2.jpg">
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <h1 class="text-center headline">
+                    <strong>We Connect You With the BEST Mortgage <br> Loan Offers Instantly!</strong>
+                </h1>
+                <span class="divider"></span>
+            </div>
+
         </div>
-        <div class="row justify-content-center">
-            <h1 class="text-center"><strong>We Connect You With the BEST Mortgage <br> Loan Offers Instantly!</strong>;</h1>
-            <span class="divider"></span>
+    </section>
+
+    <!-- Section - PARTNERS -->
+    <section class="section-partners">
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center text-blue mb-5 headline">OUR PARTNERS SPECIALIZE IN:</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 col-xs-12">
+                    <div class="card card-body text-center">
+                        <h3><strong><strong>First Time Buyers</strong>&nbsp;</strong></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus magna.&nbsp;</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-xs-12">
+                    <div class="card card-body text-center">
+                        <h3><strong><strong>VA Loans</strong></strong></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus magna.&nbsp;</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-xs-12">
+                    <div class="card card-body text-center">
+                        <h3><strong><strong>$0 Down Loans</strong></strong></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus magna.&nbsp;</p
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-  </section>
-  <section class="vh-center">
-      <div class="container">
-        <div class="row text-center justify-content-sm-center">
-          <h2 class="text-blue">OUR PARTNERS SPECIALIZE IN:</h2>
+    </section>
+
+    <footer class="py-5">
+        <div class="container text-center">
+            <div class="row justify-content-center mt-5">
+                <span class="divider"></span>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col text-muted">
+                    Copyright © 2019 All Rights Reserved.
+                </div>
+            </div>
         </div>
-        <div class="row text-center justify-content-sm-center no-gutters">
-          <div class="col-12 col-sm-8 col-md-3 m-auto" style="z-index: 10000;">
-            <h3><strong><strong>First Time Buyers</strong>&nbsp;</strong></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus magna.&nbsp;</p>
-          </div>
-        
-          <div class="col-12 col-sm-8 col-md-3 m-auto pt-3 pt-md-0" style="z-index: 10000;">
-            <h3><strong><strong>VA Loans</strong></strong></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus magna.&nbsp;</p>
-          </div>
-        
-          <div class="col-12 col-sm-8 col-md-3 m-auto pt-3 pt-md-0" style="z-index: 10000;">
-            <h3><strong><strong>$0 Down Loans</strong></strong></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus magna.&nbsp;</p>
-          </div>
-        </div>
-      </div>
-  </section>
-  
-  <FOoter class="vh-center">
-    <div class="container">
-      <div class="row text-center justify-content-center">
-          <span class="divider"></span>
-          <p>Copyright © 2019 All Rights Reserved. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus magna.&nbsp;
-          </p>
-      </div>
-    </div>
-  </FOoter>
+    </footer>
 </body>
 </html>
