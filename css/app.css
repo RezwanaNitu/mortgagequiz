@@ -60,10 +60,6 @@ section-partners{
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
 
-    /*body{*/
-    /*    background: skyblue;*/
-    /*}*/
-
     .header.flex-container {
         flex-direction: column;
     }
@@ -73,16 +69,18 @@ section-partners{
     }
 
     .header.flex-container .flex-item.left{
-        order: 2;
+        display: none;
     }
 
     .header.flex-container .flex-item.mid{
-        order: 1;
+        order: 2;
     }
 
     .header.flex-container .flex-item.right{
-        order: 3;
+        order: 1 !important;
     }
+
+    .header.flex-container .flex-item.right > img{ width: 200px; }
 
     .header .headline{
         font-size: 2rem;
@@ -105,33 +103,41 @@ section-partners{
 
 }
 
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-    /*body{*/
-    /*    background: rebeccapurple;*/
-    /*}*/
+/* Medium devices (tablets, 768px and down)*/
+@media (min-width: 576px) and (max-width: 768px) {
+    /* body{
+        background: rebeccapurple;
+    } */
 
-    .header .headline{
-        font-size: 2.5rem;
-        padding-left: 1.8rem;
-        padding-right: 1.8rem;
+
+    .header.flex-container {
+        flex-direction: column;
     }
 
-    .header .sub-headline{
+    .header.flex-container .flex-item{
         margin-top: 2rem;
-        font-size: 2.2rem;
     }
+    
+    .header.flex-container .flex-item.left{
+        display: none;
+    }
+
+    .header.flex-container .flex-item.mid{
+        order: 2;
+    }
+
+    .header.flex-container .flex-item.right{
+        order: 1 !important;
+    }
+
+    .header.flex-container .flex-item.right > img{ width: 200px; }
+
 }
 
+/* Medium Largedevices (laptops, 992px and up) */
+@media (min-width: 768px) and (max-width: 991.9px) {
 
-/*
-    Large devices (desktops, 992px and up)
-*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-    /*body{*/
-    /*    background: blue;*/
-    /*}*/
+    
 
     .header .headline{
         font-size: 2rem;
@@ -143,8 +149,8 @@ section-partners{
 }
 
 /*
-    Extra large devices (large desktops, 1200px and up)
- */
+    Large devices (desktops, 992px and up)
+*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
     /*body{*/
@@ -163,6 +169,11 @@ section-partners{
     }
 
 }
+
+
+/*
+    Extra large devices (large desktops, 1200px and up)
+ */
 
 @media (min-width: 1200px){
     /*body{*/
